@@ -1,0 +1,6 @@
+Id,titre,description,service,date
+101,Erreur dosage,Erreur de dosage pour un traitement,Pédiatrie,2025-01-12
+102,Retard prise en charge,Patient pris en charge avec 1h de retard,Urgences,2025-01-12
+103,Problème respirateur,Respirateur en panne dans la chambre 301,Soins intensifs,2025-01-12
+104,Dossier non mis à jour,Dossier patient mal mis à jour,Oncologie,2025-01-12
+105,Appareil défectueux,L'IRM est en panne,Imagerie,2025-01-12

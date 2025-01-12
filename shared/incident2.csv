@@ -1,0 +1,11 @@
+Id,titre,description,service,date
+1,Panne réseau,Le réseau internet est indisponible pour les médecins,Informatique,2025-01-10
+2,Erreur facturation,Erreur dans la facturation d'un patient,Administration,2025-01-11
+3,Chute d'un patient,Un patient a glissé dans le couloir,Pédiatrie,2025-01-12
+4,Problème de climatisation,La climatisation ne fonctionne pas dans les chambres du 2e étage,Maintenance,2025-01-12
+5,Retard de livraison,Les équipements de dialyse n'ont pas été livrés à temps,Logistique,2025-01-13
+6,Incident bloc opératoire,Un outil manquant dans le bloc opératoire,Chirurgie,2025-01-14
+7,Absence de personnel,Un médecin n'a pas pu être présent pour son service,Urgences,2025-01-15
+8,Équipement cassé,Un fauteuil roulant cassé dans le service,Orthopédie,2025-01-16
+9,Réclamation patient,Un patient se plaint du manque de communication,Accueil,2025-01-17
+10,Problème informatique,Le système de gestion des patients est hors service,Informatique,2025-01-18

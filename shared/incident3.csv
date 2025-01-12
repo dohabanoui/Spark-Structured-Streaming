@@ -1,0 +1,11 @@
+Id,titre,description,service,date
+11,Erreur laboratoire,Erreur dans les résultats d'une analyse de sang,Laboratoire,2025-01-11
+12,Problème ascenseur,Ascenseur bloqué au 5e étage pendant 15 minutes,Maintenance,2025-01-12
+13,Retard anesthésie,Anesthésiste arrivé en retard pour une opération,Chirurgie,2025-01-12
+14,Panne IRM,La machine IRM a cessé de fonctionner après une surchauffe,Radiologie,2025-01-13
+15,Médicament périmé,Un lot de médicaments périmés a été découvert,Pharmacie,2025-01-14
+16,Débordement urgences,Afflux important de patients sans lit disponible,Urgences,2025-01-14
+17,Fuite d’eau,Fuite détectée dans les toilettes du service,Cardiologie,2025-01-15
+18,Mauvaise orientation,Patient dirigé vers un mauvais service médical,Accueil,2025-01-16
+19,Problème lit,Lit électrique défectueux dans une chambre,Soins intensifs,2025-01-17
+20,Éclairage défectueux,Manque d'éclairage dans une salle d'examen,Ophtalmologie,2025-01-18
