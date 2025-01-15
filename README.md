@@ -128,7 +128,7 @@ StreamingQuery mostIncidentByYear = incidents
 ## Test
 
 Pour générer le fichier JAR, vous pouvez utiliser Apache Maven, qui est configuré pour compiler le projet et créer le fichier exécutable.
-![](captures/5.png)
+![](pictures/5.png)
 
 ### Démarrer avec Docker Compose et Ajouter une Image Docker
 
@@ -137,7 +137,7 @@ Pour démarrer les services avec Docker Compose et spécifier que vous souhaitez
 ```bash
 docker-compose up --scale datanode=2 -d
 ```
-![](captures/1.png)
+![](pictures/1.png)
 
 ### Afficher les conteneurs Docker en cours d'exécution
 
@@ -146,7 +146,7 @@ Pour voir les conteneurs Docker en cours d'exécution, on utilise la commande su
 ```bash
 docker ps
 ```
-![](captures/2.png)
+![](pictures/2.png)
 
 ### Exécuter le conteneur Namenode avec Docker
 
@@ -155,13 +155,13 @@ Pour accéder à un conteneur `namenode` en cours d'exécution et obtenir un ter
 ```bash
 docker exec -it f2f4bc98dca8 bash
 ```
-![](captures/3.png)
-![](captures/4.png)
+![](pictures/3.png)
+![](pictures/4.png)
 
 ### Déplacer le fichier JAR dans le dossier Volume en Data
 
 Après avoir généré le fichier JAR, vous pouvez le déplacer dans un dossier volume de données Docker pour qu'il soit accessible depuis d'autres services ou conteneurs. 
-![](captures/6.png)
+![](pictures/6.png)
 
 ### Soumettre le fichier JAR à Spark
 
@@ -178,10 +178,10 @@ Afin de traiter les fichiers CSV contenant les données des incidents hospitalie
    ```bash
    hdfs dfs -put incident1.csv /incidents
 ```
-![](captures/7.png)
-![](captures/8.png)
-![](captures/9.png)
-![](captures/10.png)
-![](captures/11.png)
+![](pictures/7.png)
+![](pictures/8.png)
+![](pictures/9.png)
+![](pictures/10.png)
+![](pictures/11.png)
 
 
