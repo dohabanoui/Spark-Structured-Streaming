@@ -128,7 +128,7 @@ StreamingQuery mostIncidentByYear = incidents
 ## Test
 
 Pour générer le fichier JAR, vous pouvez utiliser Apache Maven, qui est configuré pour compiler le projet et créer le fichier exécutable.
-![Texte alternatif de l'image](chemin/vers/l'image.png)
+![](captures/5.png)
 
 ### Démarrer avec Docker Compose et Ajouter une Image Docker
 
@@ -146,4 +146,42 @@ Pour voir les conteneurs Docker en cours d'exécution, on utilise la commande su
 ```bash
 docker ps
 ```
+![](captures/2.png)
+
+### Exécuter le conteneur Namenode avec Docker
+
+Pour accéder à un conteneur `namenode` en cours d'exécution et obtenir un terminal interactif, vous pouvez utiliser la commande suivante :
+
+```bash
+docker exec -it f2f4bc98dca8 bash
+```
+![](captures/3.png)
+![](captures/4.png)
+
+### Déplacer le fichier JAR dans le dossier Volume en Data
+
+Après avoir généré le fichier JAR, vous pouvez le déplacer dans un dossier volume de données Docker pour qu'il soit accessible depuis d'autres services ou conteneurs. 
+![](captures/6.png)
+
+### Soumettre le fichier JAR à Spark
+
+Une fois le fichier JAR déplacé dans le volume de données de votre conteneur, vous pouvez le soumettre à Spark pour exécution avec la commande `spark-submit`. Voici la commande à utiliser :
+
+```bash
+spark-submit --master spark://spark-master:7077 --class ma.dohabanoui.HospitalIncidentsStreaming spark_structed-1.0-SNAPSHOT.jar
+```
+### Chargement des Fichiers CSV dans HDFS
+
+Afin de traiter les fichiers CSV contenant les données des incidents hospitaliers, nous devons les placer dans le système de fichiers distribué HDFS. Voici comment charger les fichiers `incident1.csv`, `incident2.csv`, et `incident3.csv` dans le répertoire `/incidents` de HDFS :
+
+**Charger le fichier `incident1.csv` dans HDFS :**
+   ```bash
+   hdfs dfs -put incident1.csv /incidents
+```
+![](captures/7.png)
+![](captures/8.png)
+![](captures/9.png)
+![](captures/10.png)
+![](captures/11.png)
+
 
